@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Zone Water Park</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes wave {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .wave-animation {
+            animation: wave 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Splash Zone</h1>
+            <div class="space-x-4">
+                <a href="#rides" class="hover:text-blue-200 transition">Rides</a>
+                <a href="#tickets" class="hover:text-blue-200 transition">Tickets</a>
+                <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-24 pb-16 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold text-blue-800 mb-6 wave-animation">Welcome to Splash Zone</h1>
+            <p class="text-xl text-blue-600 mb-8">The Ultimate Water Park Experience</p>
+            <button class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105">
+                Book Now!
+            </button>
+        </div>
+    </header>
+
+    <section id="rides" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Our Exciting Slides</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-100 rounded-lg p-6 hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">Tsunami Twist</h3>
+                    <p class="text-gray-600">Experience our most thrilling water slide with 360° turns!</p>
+                </div>
+                <div class="bg-blue-100 rounded-lg p-6 hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">Rapids Run</h3>
+                    <p class="text-gray-600">Race down our fast-paced family slide!</p>
+                </div>
+                <div class="bg-blue-100 rounded-lg p-6 hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">Lazy River</h3>
+                    <p class="text-gray-600">Relax and float along our peaceful stream.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Ticket Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold mb-4">Day Pass</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-4">$39.99</p>
+                    <ul class="text-gray-600 mb-8">
+                        <li>✓ Full day access</li>
+                        <li>✓ All attractions</li>
+                        <li>✓ Locker rental</li>
+                    </ul>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+                        Purchase
+                    </button>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold mb-4">Season Pass</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-4">$199.99</p>
+                    <ul class="text-gray-600 mb-8">
+                        <li>✓ Unlimited visits</li>
+                        <li>✓ Special events</li>
+                        <li>✓ 10% off food</li>
+                    </ul>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+                        Purchase
+                    </button>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold mb-4">Family Pack</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-4">$129.99</p>
+                    <ul class="text-gray-600 mb-8">
+                        <li>✓ 4 Day passes</li>
+                        <li>✓ Meal vouchers</li>
+                        <li>✓ Premium parking</li>
+                    </ul>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-blue-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>123 Splash Avenue</p>
+                    <p>Watertown, WA 98765</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <p>Monday - Friday: 10AM - 8PM</p>
+                    <p>Saturday - Sunday: 9AM - 9PM</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-200 transition">Facebook</a>
+                        <a href="#" class="hover:text-blue-200 transition">Twitter</a>
+                        <a href="#" class="hover:text-blue-200 transition">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
